@@ -1,4 +1,4 @@
 # forumbelajar
 
-A new Flutter project, Forum Belajar.
+A simple Flutter project, Forum Belajar.
 
