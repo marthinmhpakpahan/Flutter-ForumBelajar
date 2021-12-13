@@ -12,7 +12,7 @@ class TopicServices {
   final String url = "http://api-forum.mmhp.tech/topic";
 
   Future<IndexTopicResponse> index() async {
-    final response = await get(Uri.parse(url + "/"));
+    final response = await get(Uri.parse(url + "/index/"));
     return IndexTopicResponse.fromJson(json.decode(response.body));
   }
 

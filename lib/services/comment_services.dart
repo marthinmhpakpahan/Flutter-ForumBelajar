@@ -10,7 +10,7 @@ class CommentServices {
   final String url = "http://api-forum.mmhp.tech/comment";
 
   Future<IndexCommentResponse> index(int id) async {
-    final response = await get(Uri.parse(url + "/" + id.toString()));
+    final response = await get(Uri.parse(url + "/index/" + id.toString()));
     return IndexCommentResponse.fromJson(json.decode(response.body));
   }
 
